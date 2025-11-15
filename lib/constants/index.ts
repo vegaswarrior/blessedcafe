@@ -1,15 +1,15 @@
-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Prostore';
+export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Blessed Angel Cafe';
 export const APP_DESCRIPTION =
   process.env.NEXT_PUBLIC_APP_DESCRIPTION ||
-  'A modern ecommerce store built with Next.js';
+  'Amazing Premium Ice Coffee That Your Taste Buds Will Thank You For';
 export const SERVER_URL =
   process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000';
 export const LATEST_PRODUCTS_LIMIT =
   Number(process.env.LATEST_PRODUCTS_LIMIT) || 4;
 
 export const signInDefaultValues = {
-  email: 'admin@example.com',
-  password: '123456',
+  email: 'allenyoung1979@yahoo.com',
+  password: 'NewLove2044$&@*',
 };
 
 export const signUpDefaultValues = {
@@ -31,7 +31,7 @@ export const PAYMENT_METHODS = process.env.PAYMENT_METHODS
   ? process.env.PAYMENT_METHODS.split(', ')
   : ['PayPal', 'Stripe', 'CashOnDelivery'];
 export const DEFAULT_PAYMENT_METHOD =
-  process.env.DEFAULT_PAYMENT_METHOD || 'PayPal';
+  process.env.DEFAULT_PAYMENT_METHOD || 'Stripe';
 
 export const PAGE_SIZE = Number(process.env.PAGE_SIZE) || 12;
 
@@ -60,4 +60,4 @@ export const reviewFormDefaultValues = {
   rating: 0,
 };
 
-export const SENDER_EMAIL = process.env.SENDER_EMAIL || 'onboarding@resend.dev';
+export const SENDER_EMAIL = process.env.SENDER_EMAIL || 'vegaswarrior888@gmail.com';
