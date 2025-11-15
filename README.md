@@ -121,8 +121,8 @@ Create a Stripe account and get the publishable and secret key.
 **Example:**
 
 ```
-STRIPE_SECRET_KEY="sk_test_REDACTED"
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="pk_test_REDACTED"
+STRIPE_SECRET_KEY="your-stripe-secret-key"
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="your-stripe-publishable-key"
 ```
 
 #### Uploadthing Settings
