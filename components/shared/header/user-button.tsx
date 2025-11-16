@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { auth } from '@/auth';
-import { signOutUser } from '@/lib/actions/user.actions';
+// import { signOutUser } from '@/lib/actions/user.actions';
 import SignOutButton from './sign-out-button';
 import { Button } from '@/components/ui/button';
 import {

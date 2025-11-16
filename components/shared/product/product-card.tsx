@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card, CardHeader } from "@/components/ui/card";
 import { useState } from "react";
-import { ShoppingCart, Star } from "lucide-react";
+import { ShoppingCart} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ProductPrice from "./product-price";
 import {Product} from '@/types'
