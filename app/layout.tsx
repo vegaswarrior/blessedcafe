@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`${inter.className} antialiased`}>
+      <body className='bg-gradient-to-r from-purple-400 via-teal-400 to-sky-400 flex flex-col min-h-screen overflow-x-hidden'>
         <ThemeProvider
           attribute='class'
           defaultTheme='light'
@@ -37,3 +37,6 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
