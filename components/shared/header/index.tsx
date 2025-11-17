@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Menu from "./menu";
 import CategoryDrawer from './category-drawer';
-import Search from './search';
+// import Search from './search';
 
 const Header = () => {
     return ( 

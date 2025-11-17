@@ -4,8 +4,6 @@ import {
   Select,
   SelectContent,
   SelectItem,
-  SelectTrigger,
-  SelectValue,
 } from '@/components/ui/select';
 import { getAllCategories } from '@/lib/actions/product.actions';
 import { SearchIcon } from 'lucide-react';
