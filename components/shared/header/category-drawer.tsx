@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import Search from './search';
 import {
   Drawer,
   DrawerClose,
@@ -21,17 +22,12 @@ const CategoryDrawer = async () => {
           <MenuIcon />
         </Button>
       </DrawerTrigger>
-      <DrawerContent className='h-full max-w-sm'>
+      <DrawerContent className='h-full max-w-sm bg-linear-to-r from-purple-400 via-teal-400 to-sky-400'>
         <DrawerHeader>
           <DrawerTitle>Select a category</DrawerTitle>
           <div className='space-y-1 mt-4'>
             {categories.map((x) => (
-              <Button
-                variant='ghost'
-                className='w-full justify-start'
-                key={x.category}
-                asChild
-              >
+              <Button variant='ghost' className='w-full justify-start' key={x.category} asChild >
                 <DrawerClose asChild>
                   <Link href={`/search?category=${x.category}`}>
                     {x.category} ({x._count})
@@ -41,6 +37,7 @@ const CategoryDrawer = async () => {
             ))}
           </div>
         </DrawerHeader>
+        <Search />
       </DrawerContent>
     </Drawer>
   );

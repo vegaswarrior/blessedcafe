@@ -12,18 +12,12 @@ const Header = () => {
             <Link href='/' className="flex-start">
             <CategoryDrawer />
                <div className="relative w-24 h-24">
-                 <Image 
-                   src='/images/blessedLogo.svg' 
-                   fill
-                   className="object-contain"
-                   alt="Blessed Angel Cafe Logo"  
-                   priority={true}
-                 />
+                 <Image src='/images/blessedLogo.svg' fill className="object-contain" alt="Blessed Angel Cafe Logo"  priority={true} />
                </div>
                {/* <span className="hidden lg:block font-bold text-2xl ml-3">{APP_NAME}</span> */}
             </Link>
         </div>
-        <Search />
+        {/* <Search /> */}
         <div className="hidden md:flex items-center justify-center text-white">
           <Link href='/' className="m-2.5 hover:text-black hover:underline">Home</Link>
           <Link href='/about' className="m-2.5 hover:text-black hover:underline">About</Link>

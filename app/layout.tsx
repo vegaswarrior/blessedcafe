@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import '@/assets/styles/globals.css';
 import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from '@/lib/constants';
-import { ThemeProvider } from 'next-themes';
 import { Toaster } from '@/components/ui/toaster';
+import Header from '@/components/shared/header';
+import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
   title: {
@@ -20,16 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className='bg-gradient-to-r from-purple-400 via-teal-400 to-sky-400 flex flex-col min-h-screen overflow-x-hidden'>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='light'
-          enableSystem
-          disableTransitionOnChange
-        >
+      <body className='bg-linear-to-r from-purple-400 via-teal-400 to-sky-400 flex flex-col min-h-screen overflow-x-hidden'>
+          <Header />
           {children}
+          <Footer />
           <Toaster />
-        </ThemeProvider>
       </body>
     </html>
   );
